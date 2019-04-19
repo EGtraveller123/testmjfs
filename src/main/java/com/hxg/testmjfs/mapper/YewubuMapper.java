@@ -1,7 +1,6 @@
 package com.hxg.testmjfs.mapper;
 
 import com.hxg.testmjfs.bean.Yewubu;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 public interface YewubuMapper {

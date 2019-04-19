@@ -1,13 +1,13 @@
 package com.hxg.testmjfs;
 
-import com.hxg.testmjfs.mapper.YewubuMapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
+
 
 @SpringBootApplication
-@MapperScan("com.hxg.testmjfs.mapper")
+@MapperScan(value = "com.hxg.testmjfs.mapper")
+
 public class TestmjfsApplication {
 
     public static void main(String[] args) {

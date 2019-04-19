@@ -17,7 +17,7 @@ import java.util.Map;
 public class YewubuController {
 
     @Autowired
-    YewubuService yewubuService;
+    private YewubuService yewubuService;
 
 
     private static final String SELECT_BY_KUANHAO = "selectByKuanhao";
@@ -62,7 +62,7 @@ public class YewubuController {
      * @param keyWord    搜索的关键字
      * @return 返回查询的结果，其中键值为 rows 的代表查询到的每一记录，若有分页则为分页大小的记录；键值为 total 代表查询到的符合要求的记录总条数
      */
-    @SuppressWarnings("unchecked")
+
     @RequestMapping(value = "getYewubuList", method = RequestMethod.GET)
     public
     @ResponseBody
