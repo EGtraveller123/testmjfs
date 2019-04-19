@@ -1,10 +1,11 @@
 package com.hxg.testmjfs.bean;
 
-public class Yewubu_t {
+public class Jincangt {
 
     private Integer id;
     private String kuanhao;
     private String yanse;
+    private String jcriqi;
     private Integer xs;
     private Integer s;
     private Integer m;
@@ -35,6 +36,14 @@ public class Yewubu_t {
 
     public void setYanse(String yanse) {
         this.yanse = yanse;
+    }
+
+    public String getJcriqi() {
+        return jcriqi;
+    }
+
+    public void setJcriqi(String jcriqi) {
+        this.jcriqi = jcriqi;
     }
 
     public Integer getXs() {
@@ -95,10 +104,11 @@ public class Yewubu_t {
 
     @Override
     public String toString() {
-        return "Yewubu_t{" +
+        return "Jincangt{" +
                 "id=" + id +
                 ", kuanhao='" + kuanhao + '\'' +
                 ", yanse='" + yanse + '\'' +
+                ", jcriqi='" + jcriqi + '\'' +
                 ", xs=" + xs +
                 ", s=" + s +
                 ", m=" + m +

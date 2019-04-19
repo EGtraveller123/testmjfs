@@ -66,7 +66,7 @@ public class YewubuController {
     @RequestMapping(value = "getYewubuList", method = RequestMethod.GET)
     public
     @ResponseBody
-    Map<String, Object> getCustomerList(@RequestParam("searchType") String searchType,
+    Map<String, Object> getYewubu(@RequestParam("searchType") String searchType,
                                         @RequestParam("offset") int offset,
                                         @RequestParam("limit") int limit,
                                         @RequestParam("keyWord") String keyWord){
@@ -160,7 +160,7 @@ public class YewubuController {
     @RequestMapping(value = "addYewubu", method = RequestMethod.POST)
     public
     @ResponseBody
-    Map<String, Object> addCustomer(@RequestBody Yewubu yewubu){
+    Map<String, Object> addYewubu(@RequestBody Yewubu yewubu){
         // 初始化 Response
         Response responseContent = ResponseFactory.newInstance();
 

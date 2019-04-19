@@ -14,7 +14,7 @@ public interface YewubuService {
     Map<String,Object> selectByKuanhao(String kuanhao);
 
     /**
-     * 支持查询分页以及模糊查询
+     * 查询分页
      *
      * @param offset       分页的偏移值
      * @param limit        分页的大小

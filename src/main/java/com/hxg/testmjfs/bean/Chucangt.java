@@ -1,6 +1,6 @@
 package com.hxg.testmjfs.bean;
 
-public class Chucang_t {
+public class Chucangt {
 
     private Integer id;
     private String kuanhao;
@@ -104,7 +104,7 @@ public class Chucang_t {
 
     @Override
     public String toString() {
-        return "Chucang_t{" +
+        return "Chucangt{" +
                 "id=" + id +
                 ", kuanhao='" + kuanhao + '\'' +
                 ", yanse='" + yanse + '\'' +
