@@ -3,13 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.hxg.testmjfs.mapper.CaijianbutMapper">
+<mapper namespace="com.hxg.testmjfs.mapper.HoudaobutMapper">
 
-    <resultMap type="com.hxg.testmjfs.bean.Caijianbut" id="caijianbu_t">
+    <resultMap type="com.hxg.testmjfs.bean.Houdaobut" id="houdaobu_t">
         <id property="id" column="id"/>
         <result property="kuanhao" column="kuanhao"/>
         <result property="yanse" column="yanse"/>
-        <result property="cjriqi" column="cjriqi"/>
+        <result property="hdriqi" column="hdriqi"/>
         <result property="xs" column="xs"/>
         <result property="s" column="s"/>
         <result property="m" column="m"/>
@@ -20,16 +20,16 @@
     </resultMap>
 
     <insert id="insert">
-        insert into caijianbu_t(kuanhao,yanse,cjriqi,xs,s,m,l,xl,xxl,xxxl)
-        values (#{kuanhao},#{yanse},#{cjriqi},#{xs},#{s},#{m},#{l},#{xl},#{xxl},#{xxxl})
+        insert into houdaobu_t(kuanhao,yanse,hdriqi,xs,s,m,l,xl,xxl,xxxl)
+        values (#{kuanhao},#{yanse},#{hdriqi},#{xs},#{s},#{m},#{l},#{xl},#{xxl},#{xxxl})
     </insert>
 
 
-    <select id="selectByKuanhao" resultMap="caijianbu_t">
+    <select id="selectByKuanhao" resultMap="houdaobu_t">
         select
-            kuanhao,yanse,cjriqi,xs,s,m,l,xl,xxl,xxxl
+            kuanhao,yanse,hdriqi,xs,s,m,l,xl,xxl,xxxl
         from
-            caijianbu_t
+            houdaobu_t
         where
             kuanhao=#{kuanhao}
     </select>

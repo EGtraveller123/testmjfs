@@ -2,8 +2,6 @@ package com.hxg.testmjfs.mapper;
 
 import com.hxg.testmjfs.bean.Caijianbu;
 
-import java.util.List;
-import java.util.Map;
 
 public interface CaijianbuMapper {
 
