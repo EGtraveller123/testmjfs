@@ -30,7 +30,7 @@
             kuanhao = #{kuanhao}
     </select>
 
-    <select id="selectByKehu" resultMap="ewubu">
+    <select id="selectByKehu" resultMap="yewubu">
         select
             kuanhao,kehu,ywbshuliang,mianliao,chriqi
         from
