@@ -72,8 +72,8 @@ public class YewubutController {
     }
 
     private Map<String, Object> query(String kuanhao) {
-        Map<String, Object> queryResult = null;
-        queryResult = yewubutService.selectByKuanhao(kuanhao);
+//        Map<String, Object> queryResult;
+        Map<String, Object> queryResult = yewubutService.selectByKuanhao(kuanhao);
         return queryResult;
     }
 

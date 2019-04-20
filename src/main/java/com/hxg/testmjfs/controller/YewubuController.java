@@ -204,10 +204,6 @@ public class YewubuController {
         Response responseContent = ResponseFactory.newInstance();
         // 参数检查
         if (StringUtils.isNumeric(yewubuKuanhao)) {
-            // 转换为 Integer
-            Integer customerID = Integer.valueOf(yewubuKuanhao);
-
-            // 刪除
             String result = yewubuService.delete(yewubuKuanhao) ? Response.RESPONSE_RESULT_SUCCESS : Response.RESPONSE_RESULT_ERROR;
             responseContent.setResponseResult(result);
         } else
