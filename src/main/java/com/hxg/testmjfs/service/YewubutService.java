@@ -7,7 +7,7 @@ import java.util.Map;
 public interface YewubutService {
 
     //根据款号查询
-    Map<String,Object> selectByKuanhao(String Kuanhao);
+    Map<String,Object> selectByKuanhao(String kuanhao);
 
 
     //添加业务部

@@ -14,7 +14,7 @@ import java.util.Map;
 
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/ywbt")
 public class YewubutController {
     @Autowired
     private YewubutService  yewubutService;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/cjbt")
 public class CaijianbutController {
     @Autowired
     private CaijianbutService caijianbutService;

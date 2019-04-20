@@ -77,4 +77,12 @@ public class Response {
     public Map<String, Object> generateResponse(){
         return this.responseContent;
     }
+
+    /**
+     * 返回true or false
+     * @return
+     */
+    public boolean boolResponse(){
+        return this.boolResponse();
+    }
 }

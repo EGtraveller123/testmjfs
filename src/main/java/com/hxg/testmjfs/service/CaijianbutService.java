@@ -9,7 +9,7 @@ import java.util.Map;
 public interface CaijianbutService {
 
     //根据款号查询
-    Map<String,Object> selectByKuanhao(String Kuanhao);
+    Map<String,Object> selectByKuanhao(String kuanhao);
 
     //添加
     boolean insert(Caijianbut caijianbut);
