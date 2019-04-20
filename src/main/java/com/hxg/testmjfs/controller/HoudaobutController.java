@@ -68,18 +68,18 @@ public class HoudaobutController {
 
     /**
      * 添加一条裁剪部具体信息
-     * @param caijianbut
+     * @param houdaobut
      * @return 返回一个map，其中：key 为 result表示操作的结果，包括：success 与 error
      */
     @RequestMapping(value = "addHdbt", method = RequestMethod.POST)
     public
     @ResponseBody
-    Map<String, Object> addHoudaobut(@RequestBody Houdaobut caijianbut){
+    Map<String, Object> addHoudaobut(@RequestBody Houdaobut houdaobut){
         // 初始化 Response
         Response responseContent = ResponseFactory.newInstance();
 
         // 添加记录
-        String result = houdaobutService.insert(caijianbut) ? Response.RESPONSE_RESULT_SUCCESS : Response.RESPONSE_RESULT_ERROR;
+        String result = houdaobutService.insert(houdaobut) ? Response.RESPONSE_RESULT_SUCCESS : Response.RESPONSE_RESULT_ERROR;
 
         responseContent.setResponseResult(result);
         return responseContent.generateResponse();
